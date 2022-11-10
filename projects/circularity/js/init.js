@@ -31,16 +31,14 @@ var init = function (window) {
             physikz.addRandomVelocity(circle, canvas, 15, 2);
             view.addChild(circle);
             circles.push(circle);
-        }
+        };
 
         // TODO 3 / 7 : Call the drawCircle() function 
 
-        drawCircle();
-        drawCircle();
-        drawCircle();
-        drawCircle();
-        drawCircle();
-
+        for (var loopsCompleted = 0; loopsCompleted < 80; loopsCompleted++) {
+            drawCircle();
+        }
+        
         ////////////////////////////////////////////////////////////
         ///////////////// PROGRAM LOGIC ////////////////////////////
         ////////////////////////////////////////////////////////////
@@ -53,13 +51,12 @@ var init = function (window) {
         function update() {
             // TODO 4 : Update the circle's position //
 
-            /*
-            for (var i = 0; i < circles.length; i++) {
-                var eachValue = circles[i];
-                physikz.updatePosition(circles[0]);
+            for (var i = 0; i < circles.length - 1; i++) {
+                physikz.updatePosition(circles[i]);
+                game.checkCirclePosition(circles[i]);
             }
-            */
 
+            /*
             physikz.updatePosition(circles[0]);
             physikz.updatePosition(circles[1]);
             physikz.updatePosition(circles[2]);
@@ -73,6 +70,7 @@ var init = function (window) {
             game.checkCirclePosition(circles[2]);
             game.checkCirclePosition(circles[3]);
             game.checkCirclePosition(circles[4]);
+            */
 
             // TODO 9 : Iterate over the array
 
