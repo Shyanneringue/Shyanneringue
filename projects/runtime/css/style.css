@@ -13,4 +13,5 @@ canvas {
     -webkit-user-select: none;
     -ms-user-select: none;
     position:absolute;
+    background-color: #b2b1b1;
 }

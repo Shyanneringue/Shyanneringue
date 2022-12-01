@@ -11,7 +11,7 @@ var init = function (window) {
         app = opspark.makeApp(world.makeRules()),
         canvas = app.canvas, 
         view = app.view,
-        fps = draw.fps('#000');
+        fps = draw.fps('10px Impact','#696876');
     
     var 
         space, 
@@ -33,10 +33,12 @@ var init = function (window) {
 
     // TODO 2 : add background
 
+    var background = opspark.makeBackground(app, ground);
+view.addChild(background);
     
-    var help = draw.textfield('MOVES || up: jump | right: flying jump | down: duck | space: fire | q self destruct!', 
-        '20px Arial',
-        '#ccc', 'left');
+    var help = draw.textfield('MOVES || up: jump | right: flying jump | down: duck | space: fire | Q: self destruct', 
+        '20px Georgia',
+        '#373953', 'left');
     help.x = 10;
     help.y = ground.y + ground.getBounds().height + 10;
     view.addChild(help);
@@ -72,7 +74,9 @@ var init = function (window) {
     
     // TODO 1 : add a heads-up display to game
 
-
+    var hud = opspark.makeHud();
+    view.addChild(hud);
+    window.hud = hud;
 
     var game = opspark.createGameManager(app,hud);
     opspark.runLevelInGame(game);
