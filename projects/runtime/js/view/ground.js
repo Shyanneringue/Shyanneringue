@@ -19,7 +19,7 @@
         
         function render() {
             ground.removeAllChildren();
-            ground.addChild(draw.rect(canvas.width, 10, '#2f2348'));
+            ground.addChild(draw.rect(canvas.width, 15, '#2f2348'));
         }
         
         function resize(argument) {
