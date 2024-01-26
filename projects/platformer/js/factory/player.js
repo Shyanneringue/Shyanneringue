@@ -309,7 +309,7 @@
         animations.duck = asset.animations.add('duck', Phaser.Animation.generateFrameNames('duck-', 1, 28, '.png', 4), 30, false);
         animations.jump = asset.animations.add('jump', Phaser.Animation.generateFrameNames('jump-', 1, 24, '.png', 4), 30, false);
         animations.run = asset.animations.add('run', Phaser.Animation.generateFrameNames('run-', 1, 21, '.png', 4), 30, true);
-        animations.flyingJump = asset.animations.add('flying-jump', Phaser.Animation.generateFrameNames('flying-jump-', 1, 48, '.png', 4), 30, false);
+        animations.flyingJump = asset.animations.add('flying-jump', Phaser.Animation.generateFrameNames('flying-jump-', 1, 16, '.png', 4), 30, false);
         animations.fire = asset.animations.add('fire', Phaser.Animation.generateFrameNames('lazer-', 1, 31, '.png', 4), 30, false);
         animations.stop = asset.animations.add('stop', Phaser.Animation.generateFrameNames('stop-', 1, 2, '.png', 4), 30, true);
         animations.idle = asset.animations.add('idle', Phaser.Animation.generateFrameNames('front-idle-', 1, 179, '.png', 4), 30, true);

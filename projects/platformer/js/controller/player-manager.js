@@ -29,6 +29,9 @@
             
         }
         
+
+
+        
         /* 
         // Fire on Spacebar Code:
         
@@ -43,6 +46,7 @@
         */
         
         function update() {
+            
             // todo : fix states to include velocity or keyup/cursorLeft //
             if (asset.body && player.getStateName() !== 'flyingJump') asset.body.velocity.x = 0;
             if (cursors.left.isDown || aKey.isDown) {
