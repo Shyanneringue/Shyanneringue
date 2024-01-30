@@ -25,10 +25,10 @@
     var gravity = 0.6;
     var friction = 0.7;
     // The number of platforms
-    var num = 5;
+    var num = 2;
     // The platforms
     var platforms = [];
-    // Function to render the canvas 
+    // Function to render the canvas
     function rendercanvas(){
         ctx.fillStyle = "#F0F8FF";
         ctx.fillRect(0, 0, 630, 1000);
@@ -46,9 +46,9 @@
         let platformMargin = 50;
         let platformStep = 150;
 
-
-  for (let i = 0; i < num; i++) {
-    let platformX = Math.floor(canvas.width * (i + 0.5) / num);
+        
+        for (let i = 0; i < num; i++) {
+            let platformX = Math.floor(canvas.width * (i + 0.5) / num);
     let platformY = platformHeight + Math.floor(Math.random() * (platformStep * 2));
 
 
@@ -64,27 +64,23 @@
         break;
       }
     }
-
-
-    if (validPlacement) {
-      platforms.push({
-        x: platformX,
-        y: platformY,
-        width: 110,
-        height: 15
-      });
-      platformHeight += platformStep;
-    } else {
-      // Handle invalid placement scenarios
-    }
+    
+            platforms.push(
+                {
+                x: 100 * i,
+                y: 200 + (30 * i),
+                width: 110,
+                height: 15
+                }
+            );
         }
-    }
+        }
     // Function to render platforms
-    function renderplat() {
-        for (let i = 0; i < platforms.length; i++) {
+    function renderplat(){
         ctx.fillStyle = "#45597E";
-        ctx.fillRect(platforms[i].x, platforms[i].y, platforms[i].width, platforms[i].height);    
-        }
+        ctx.fillRect(platforms[0].x, platforms[0].y, platforms[0].width, platforms[0].height);
+        ctx.fillRect(platforms[1].x, platforms[1].y, platforms[1].width,platforms[1]. height);
+    
     }
     // This function will be called when a key on the keyboard is pressed
     function keydown(e) {

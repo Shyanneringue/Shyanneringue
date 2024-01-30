@@ -1,14 +1,44 @@
-For Gitpod workspaces running on a Chromebook, the default fonts are:
+//For Gitpod workspaces running on a Chromebook, the default fonts are:
 
-Sans-serif: Roboto, Noto Sans, Source Sans Pro
-Serif: Roboto Slab, Noto Serif, Source Serif Pro
-Monospace: Roboto Mono, Noto Mono, Source Code Pro
+//Sans-serif: Roboto, Noto Sans, Source Sans Pro
+//Serif: Roboto Slab, Noto Serif, Source Serif Pro
+//Monospace: Roboto Mono, Noto Mono, Source Code Pro
 
 
-For Gitpod workspaces with MS Windows, the defaults are:
+//For Gitpod workspaces with MS Windows, the defaults are:
 
-Sans-serif: Arial, Calibri
-Serif: Times New Roman
-Monospace: Courier New
+//Sans-serif: Arial, Calibri
+//Serif: Times New Roman
+//Monospace: Courier New
 
 F0F8FF
+
+var favoriteSauces = ["bbq", "ketchup", "worcestershire"];
+
+var meals = {
+  breakfast: "pancakes",
+  lunch: "sandwich",
+  dinner: "apple pie",
+};
+
+dataTests(favoriteSauces, meals);
+
+/////////////////////////////////////////////////////////////////
+// Replace the '???'s so that the correct messages are printed //
+/////////////////////////////////////////////////////////////////
+
+function dataTests(sauces, foods) {
+  console.log(foods);
+
+  printLayer1(sauces, foods);
+}
+
+function printLayer1(sauce, meal) {
+  console.log(sauce[0]);
+
+  printLayer2(meal);
+}
+
+function printLayer2(dessert) {
+  console.log(dessert);
+}
