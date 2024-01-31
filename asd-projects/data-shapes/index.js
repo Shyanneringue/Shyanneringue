@@ -46,7 +46,7 @@ $(document).ready(function () {
     repeat: 3
   };
 
-dataShapes.push(shape);
+  dataShapes.push(shape);
 
   for (var i = 0; i < dataShapes.length; i++) {
     var currentShape = dataShapes[i];
@@ -84,9 +84,9 @@ dataShapes.push(shape);
 
   // TODO 5-a: add a function that handles the bad display type
   function handleBad(data, repeat) {
-      repeat++;
-      setBackgroundWithMixed(data, repeat);
-      animationDetails.displayType = 3;
+    repeat++;
+    setBackgroundWithMixed(data, repeat);
+    animationDetails.displayType = 3;
   }
 
   /////////////////////////////////////////////////
@@ -102,7 +102,7 @@ dataShapes.push(shape);
   function goodDisplay() {
     // TODO 4-b: call your handleGood function
     var currentShape = dataShapes[currentIndex];
-    handleGood(currentShape);
+    handleGood(currentShape.color, currentShape.shape, currentShape.repeat);
   }
 
   function badDisplay() {
@@ -147,7 +147,7 @@ dataShapes.push(shape);
         }
       }
     }
-    
+
     return data;
   }
 
@@ -255,14 +255,14 @@ dataShapes.push(shape);
     animationDetails.y += animationDetails.speedY;
     if (
       animationDetails.x + $("#shape").width() + 8 >=
-        $("#shape-container").width() ||
+      $("#shape-container").width() ||
       animationDetails.x < 2
     ) {
       animationDetails.speedX *= -1;
     }
     if (
       animationDetails.y + $("#shape").height() + 4 >=
-        $("#shape-container").height() ||
+      $("#shape-container").height() ||
       animationDetails.y < 2
     ) {
       animationDetails.speedY *= -1;
