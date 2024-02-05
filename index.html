@@ -6,11 +6,13 @@
   <style>
     body {
       background: rgb(70, 106, 132);
+      /* background color of site */
       color: rgb(26, 28, 17);
+      /* text color in white box */
       padding: 10px;
       font-family: "Courier New", "Lucida Console", "Monaco";
     }
-  
+
     #all-contents {
       max-width: 800px;
       margin: auto;
@@ -19,11 +21,12 @@
     /* navigation menu */
     nav {
       background: rgb(26, 28, 17);
+      /* color of brown box on top */
       margin: 0 auto;
       margin-bottom: 20px;
       display: flex;
-      padding: 10px;
-      border: 1px;
+      padding: 9px;
+      border: 2px ridge rgb(26, 28, 17);
       border-radius: 20px;
     }
 
@@ -31,6 +34,7 @@
       display: flex;
       align-items: center;
       color: rgb(208, 195, 172);
+      /* color of nothing? */
       flex: 1;
       margin: 0;
     }
@@ -47,13 +51,16 @@
     a {
       text-decoration: none;
       color: rgb(164, 160, 131);
+      /* color of nothing? */
     }
 
     /* main container area beneath menu */
     main {
       background: rgb(222, 222, 222);
+      /* inside color of white box */
       display: flex;
       border: 15px solid rgb(222, 222, 222);
+      /* outside border color of white box */
       border-radius: 4px;
     }
 
@@ -64,7 +71,8 @@
 
     .sidebar-img {
       width: 200px;
-      border: 3px solid rgb(164, 160, 131);
+      border: 4px ridge rgb(164, 160, 131);
+      /* border of dan img */
       border-radius: 8px;
     }
 
@@ -74,7 +82,7 @@
     }
 
     #interests {
-      border: 4px rgb(213, 213, 213) ridge;
+      border: 4px ridge rgb(164, 160, 131);
       padding: 5px;
       border-radius: 5px;
     }
@@ -89,23 +97,33 @@
       margin: auto;
     }
 
-    .logoSZ {
+    .logoSZI {
       width: 20%;
-      height: 40%;
+      height: 65%;
+    }
+
+    button {
+      background-color: transparent;
+      border: none;
+      padding: 0;
+      color: rgb(70, 106, 132);
     }
   </style>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+  <script src="https://code.jquery.com/jquery-git.js"></script>
+
 </head>
 
 <body>
   <!-- All content goes here -->
   <div id="all-contents" ; class="content">
-    
+
   </div>
   <div>
     <nav>
       <h1>
-        <img class="logoSZ"
-        src="projects/bouncing-box/images/image-removebg-preview (2).png">
+        <img class="logoSZI" src="projects/bouncing-box/images/image-removebg-preview (2).png">
       </h1>
       <ul id="nav-ul">
 
@@ -140,10 +158,23 @@
         </ul>
       </div>
       <div>
-      
+
       </div>
     </main>
   </div>
+  <div>
+    <button>hehe</button>
+    <p id='result' style="display: none;">???</p>
+  </div>
 </body>
+<script>
+
+  $("button").on("click", toggleSecret);
+
+  function toggleSecret() {
+    $('#result').toggle();
+    $('#result').text('hi rat! :D');
+  }
+</script>
 
 </html>
