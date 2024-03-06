@@ -19,7 +19,22 @@ rgb(26, 28, 17); {text color in white box on home and the color of the brown box
 rgb(222, 222, 222); {color of white box}
 3px solid rgb(164, 160, 131); {color of borders}
 
+// TODO: 11: Move the snake
+for (let i = snake.body.length - 1; i > 0; i--) {
 
+  let snakeSquare = snake.body[i];
+  
+  let nextSnakeSquare = snake.body[i - 1];
+  let nextRow = nextSnakeSquare.row;
+  let nextColumn = nextSnakeSquare.column;
+  let nextDirection = nextSnakeSquare.direction;
+
+  snakeSquare.direction = nextDirection;
+  snakeSquare.row = nextRow; 
+  snakeSquare.column = nextColumn;
+
+  repositionSquare(snakeSquare);
+}
 
 Concepts mastered:
 Using jQuery to change the text of all elements of a certain tag type
@@ -32,4 +47,17 @@ Concepts to review:
 Registering an event handler for a click event
 Storing newly created jQuery objects in variables
 Assigning an id to a new jQuery object
-*/
+
+<main>
+  <div class="snake-colors">
+    <h1>Buy Colors (ignore)</h1>
+    <ul id="colors">
+      <h2><b class="snake-color locked" data-color="pink">buy pink</b></h2>
+      <h2><b class="snake-color locked" data-color="blue">buy blue</b></h2>
+      <h2><b class="snake-color locked" data-color="red">buy red</b></h2>
+    </ul>
+  </div>
+</main>
+
+
+      */
