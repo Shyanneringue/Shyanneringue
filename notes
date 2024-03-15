@@ -11,6 +11,17 @@ Sans-serif: Arial, Calibri
 Serif: Times New Roman
 Monospace: Courier New
 
+
+Notice the values for the position properties set for the #board and the #gameItem. 
+The parent element (#board) has the position: relative property while the child 
+element (#gameItem) has the position: absolute property. This combo means that the 
+child element can be placed anywhere inside the parent element by manipulating 
+the left and top properties.
+
+left is the x-coordinate, or distance from the left
+top is the y-coordinate, or distance from the top
+
+
 button style="visibility: hidden;"
 
 Color palate:
