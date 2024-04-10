@@ -24,11 +24,6 @@ top is the y-coordinate, or distance from the top
 
 button style="visibility: hidden;"
 
-Color palate:
-rgb(70, 106, 132); {background color of site}
-rgb(26, 28, 17); {text color in white box on home and the color of the brown box on the top}
-rgb(222, 222, 222); {color of white box}
-3px solid rgb(164, 160, 131); {color of borders}
 
 // TODO: 11: Move the snake
 for (let i = snake.body.length - 1; i > 0; i--) {
