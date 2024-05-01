@@ -24,9 +24,9 @@
         "textPreformat.foreground": "#5489FC",
         "textSeparator.foreground": "#694DA4",
         // Button Control — button widgets such as Open Folder button in the Explorer of a new window.
-        "button.background": "#BD49BF",
-        "button.foreground": "#a57efc",
-        "button.hoverBackground": "#DECDE3",
+        "button.background": "#17002592",
+        "button.foreground": "#a67efcf6",
+        "button.hoverBackground": "#251b28bd",
         // Dropdown Control — all dropdown widgets such as in the Integrated Terminal or the Output panel.
         "dropdown.background": "#3f2764f5",
         "dropdown.listBackground": "#bd49bfbb",
@@ -75,13 +75,34 @@
         "activityBarBadge.background": "#1b356e",
         "activityBarBadge.foreground": "#5489FC",
         // Side Bar — The Side Bar contains views like the Explorer and Search.
-        "sideBar.background": "#7d5dc1", //explorer background
-        "sideBar.foreground": "#200934",
-        "sideBar.border": "#1b356e",
-        "sideBar.dropBackground": "#009BBD",
+        "sideBar.background": "#a67efce3", //explorer background
+        "sideBar.foreground": "#170025cb",
+        "sideBar.border": "#694DA4",
+        "sideBar.dropBackground": "#454285de",
         "sideBarTitle.foreground": "#170025",
-        "sideBarSectionHeader.background": "#1f68b6ba",
-        "sideBarSectionHeader.foreground": "#1b356e",
+        "sideBarSectionHeader.background": "#6375daea",
+        "sideBarSectionHeader.foreground": "#3c3a7f",
+        "sideBarSectionHeader.border": "#694DA4",
+        // Icons
+        "icon.foreground": "#decde3e9",
+        "debugIcon.breakpointForeground": "#CF58B5",
+        "symbolIcon.colorForeground": "#CF58B5",
+        "banner.iconForeground": "#CF58B5",
+        // Minimap
+        "minimap.background": "#a67efc09",
+        "minimap.errorHighlight": "#CF58B5",
+        "minimap.findMatchHighlight": "#009abd5c",
+        "minimap.foregroundOpacity": "#5489FC",
+        "minimap.infoHighlight": "#5489FC",
+        "minimap.selectionHighlight": "#ff00c8db",
+        "minimap.warningHighlight": "#cf58b5e3",
+        "minimap.selectionOccurrenceHighlight": "#694da4b9",
+        "minimapGutter.addedBackground": "#5489FC",
+        "minimapGutter.deletedBackground": "#CF58B5",
+        "minimapGutter.modifiedBackground": "#009BBD",
+        "minimapSlider.activeBackground": "#5489FC",
+        "minimapSlider.background": "#009abd35",
+        "minimapSlider.hoverBackground": "#009abd6a",
         // Editor Groups & Tabs — Editor Groups are the containers of editors. There can be up to three editor groups. A Tab is the container of an editor. Multiple Tabs can be opened in one editor group.
         "editorGroup.background": "#5489FC",
         "editorGroup.border": "#CF58B5",
@@ -105,8 +126,8 @@
         // Editor Colors — for syntax highlighting, use the editor.tokenColorCustomizations setting. All other editor colors are listed here
         "editor.background": "#170025", //main background
         "editor.foreground": "#DECDE3",
-        "editorLineNumber.foreground": "#A57EFC",
-        "editorLineNumber.activeForeground": "#694DA4",
+        "editorLineNumber.foreground": "#A57EFC", // numbers
+        "editorLineNumber.activeForeground": "#694DA4", // numbers
         "editorCursor.background": "#DECDE3",
         "editorCursor.foreground": "#694DA4",
         "editor.selectionBackground": "#decde33c",
@@ -233,13 +254,13 @@
         "titleBar.border": "#694DA4",
         // Notification Colors — Notification toasts slide up from the bottom-right of the workbench.
         "notificationCenter.border": "#694DA4",
-        "notificationCenterHeader.foreground": "#a57efc",
-        "notificationCenterHeader.background": "#694DA4",
-        "notificationToast.border": "#009BBD",
-        "notifications.foreground": "#1F69B6",
-        "notifications.background": "#BD49BF",
-        "notifications.border": "#5489FC",
-        "notificationLink.foreground": "#CF58B5",
+        "notificationCenterHeader.foreground": "#a66ce1",
+        "notificationCenterHeader.background": "#8753b4",
+        "notificationToast.border": "#009bbd",
+        "notifications.foreground": "#694DA4",
+        "notifications.background": "#b158c1",
+        "notifications.border": "#BD49BF",
+        "notificationLink.foreground": "#694DA4",
         // Extensions
         "extensionButton.prominentForeground": "#009BBD",
         "extensionButton.prominentBackground": "#BD49BF",
@@ -247,7 +268,7 @@
         "pickerGroup.border": "#694DA4",
         "pickerGroup.foreground": "#DECDE3",
         // Integrated Terminal Colors
-        "terminal.background": "#252029",
+        "terminal.background": "#1d1227",
         "terminal.foreground": "#a57efc",
         "terminal.ansiBlack": "#170025",
         "terminal.ansiBlue": "#5489FC",
@@ -279,6 +300,6 @@
         "gitDecoration.deletedResourceForeground": "#19abcca6",
         "gitDecoration.untrackedResourceForeground": "#4454c6",
         "gitDecoration.ignoredResourceForeground": "#BD49BF",
-        "gitDecoration.conflictingResourceForeground": "#CF58B5"
+        "gitDecoration.conflictingResourceForeground": "#CF58B5",
     }
 }

@@ -18,7 +18,7 @@ The CSS ids you will work with are:
 // sorts all elements of the provided array from smallest to largest
 async function bubbleSort(array) {
     for (let i = 0; i < array.length - 1; i++) {
-        for (let j = array.length - 1; j = i + 1; j--) {
+        for (let j = array.length - 1; j >= i + 1; j--) {
             if (array[j] < array[j - 1]) {
                 swap(array, array[j], array[j - 1]);
                 updateCounter(bubbleCounter);
@@ -30,6 +30,18 @@ async function bubbleSort(array) {
 
 // TODO 3: Implement quickSort
 
+async function quickSort(array, left, right) {
+    if ((right - left) > 0) {
+        var index = await partition(array, left, right);
+        if (left < (index - 1)) {
+            await quickSort(array, left, index - 1);
+        }
+        if (index < right) {
+            await quickSort(array, index, right);
+        }
+    }
+    
+}
 
 // TODOs 4 & 5: Implement partition
 
