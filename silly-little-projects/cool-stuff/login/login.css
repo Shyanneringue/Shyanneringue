@@ -1,0 +1,23 @@
+body {
+    background: rgb(70, 106, 132);
+    color: rgb(26, 28, 17);
+    padding: 10px;
+    font-family: "Courier New", "Lucida Console", "Monaco";
+}
+
+.content {
+    flex: 1;
+    padding: 15px;
+}
+
+#login {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+main {
+    background: rgb(222, 222, 222);
+    display: flex;
+    border: 15px solid rgb(222, 222, 222);
+    border-radius: 4px;
+}

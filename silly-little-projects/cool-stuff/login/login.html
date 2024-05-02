@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>Login</title>
+        <link href="login.css" rel="stylesheet">
+        <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
+        
+    </head>
+
+<body>
+    <main>
+        <div class="content">
+            <h1>Login</h1>
+            <ul id="login">
+                <div id="signIn">
+                    <input id="usernameInput" placeholder="enter your username"></input>
+                    <input id="passwordInput" placeholder="enter your password"></input>
+                    <button id="signInButton">Submit</button>
+                </div>
+            </ul>
+        </div>
+    </main>
+
+    <h1 id="greeting"></h1>
+</body>
+<script>
+    // Setup + Data
+    //////////////////////////////////////////////
+
+    var userOne = {
+        name: "userOne",
+        username: "coolestguy29",
+        password: "PA$$29",
+    }
+
+    var userTwo = {
+        name: "userTwo",
+        username: "coolguy04",
+        password: "W0RD04",
+    }
+
+    $("#signInButton").on("click", runProgram);
+
+    // Core Logic
+    //////////////////////////////////////////////
+
+    function runProgram() {
+        validateUser(userOne);
+        validateUser(userTwo);
+    }
+
+    // helper functions 
+    //////////////////////////////////////////////
+
+    function validateUser(user) {
+        var inputUsername = $("#usernameInput").val();
+        var inputPassword = $("#passwordInput").val();
+
+        if (inputUsername === user.username) {
+            if (inputPassword === user.password) {
+                $("#greeting").text("Welcome " + user.name);
+                $("#signIn").hide();
+                window.location.href = "/projects/cool-stuff/indextext.html";
+
+            }
+            else if (inputPassword != user.password) {
+                $("#greeting").text("Wrong Password")
+            }
+            else {
+                $("#greeting").text("Wrong User and/or Password")
+            }
+        }
+    }
+</script>
+
+</html>

@@ -1,0 +1,16 @@
+
+.italic {
+    font-style: italic;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.heads {
+    color: rgb(228, 6, 6);
+}
+
+.tails {
+    color: rgb(6, 6, 228);
+}

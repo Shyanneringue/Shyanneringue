@@ -1,0 +1,10 @@
+Color palette:
+rgb(70, 106, 132);                  {blue background color of site}
+rgb(26, 28, 17);                    {text color in white box on home and the color of the brown box on the top}
+rgb(222, 222, 222);                 {color of white box}
+3px solid rgb(164, 160, 131);       {color of borders}
+
+Font palette:
+font-family: "Courier New", "Lucida Console", "Monaco";
+
+Sizeing palette:
