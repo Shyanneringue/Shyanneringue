@@ -10,9 +10,9 @@
         "contrastBorder": "#694DA4", //random lines and borders
         // Base Colors
         "focusBorder": "#694DA4",
-        "foreground": "#c4bde0", //text right under tabs and in console
+        "foreground": "#d6d1e0", //text right under tabs and in console
         "widget.shadow": "#694DA4",
-        "selection.background": "#DECDE3",
+        "selection.background": "#decde3bd",
         "descriptionForeground": "#170025",
         "errorForeground": "#BD49BF",
         // Text Colors — inside a text document, such as the welcome page.
@@ -27,13 +27,17 @@
         "button.background": "#17002592",
         "button.foreground": "#a67efcf6",
         "button.hoverBackground": "#251b28bd",
+        "button.border": "#0c002589",
+        "button.secondaryBackground": "#06002592",
+        "button.secondaryForeground": "#867efcf6",
+        "button.secondaryHoverBackground": "#1c1b28bd",
         // Dropdown Control — all dropdown widgets such as in the Integrated Terminal or the Output panel.
         "dropdown.background": "#3f2764f5",
         "dropdown.listBackground": "#bd49bfbb",
         "dropdown.border": "#170025",
         "dropdown.foreground": "#a67efcf7",
         // Input Control — the Search view or the Find/Replace dialog.
-        "input.background": "#DECDE3",
+        "input.background": "#decde3ef",
         "input.border": "#170025",
         "input.foreground": "#170025", // text
         "input.placeholderForeground": "#170025",
@@ -46,17 +50,17 @@
         "inputValidation.warningBorder": "#170025",
         // Scroll Bar Control
         "scrollbar.shadow": "#694DA4",
-        "scrollbarSlider.activeBackground": "#BD49BF",
-        "scrollbarSlider.background": "#bd49bfd3",
-        "scrollbarSlider.hoverBackground": "#BD49BF",
+        "scrollbarSlider.activeBackground": "#a256a7f2",
+        "scrollbarSlider.background": "#7a6784a7",
+        "scrollbarSlider.hoverBackground": "#905d97e2",
         // Badge — Badges are small information labels, for example, search results count.
-        "badge.foreground": "#170025",
-        "badge.background": "#DECDE3",
+        "badge.foreground": "#b97ed1f3",
+        "badge.background": "#ae58e330",
         // Progress Bar
         "progressBar.background": "#DECDE3",
         // Lists and Trees — Colors for list and trees like the File Explorer. An active list/tree has keyboard focus, an inactive does not.
-        "list.activeSelectionBackground": "#BD49BF",
-        "list.activeSelectionForeground": "#170025",
+        "list.activeSelectionBackground": "#4994bf42", // when hover in menu
+        "list.activeSelectionForeground": "#010d33f5", // text when hover in menu
         "list.dropBackground": "#BD49BF",
         "list.focusBackground": "#BD49BF",
         "list.focusForeground": "#170025",
@@ -83,6 +87,7 @@
         "sideBarSectionHeader.background": "#6375daea",
         "sideBarSectionHeader.foreground": "#3c3a7f",
         "sideBarSectionHeader.border": "#694DA4",
+        "sideBarActivityBarTop.border": "#694DA4",
         // Icons
         "icon.foreground": "#decde3e9",
         "debugIcon.breakpointForeground": "#CF58B5",
@@ -100,29 +105,41 @@
         "minimapGutter.addedBackground": "#5489FC",
         "minimapGutter.deletedBackground": "#CF58B5",
         "minimapGutter.modifiedBackground": "#009BBD",
-        "minimapSlider.activeBackground": "#5489FC",
+        "minimapSlider.activeBackground": "#0078bd66",
         "minimapSlider.background": "#009abd35",
         "minimapSlider.hoverBackground": "#009abd6a",
         // Editor Groups & Tabs — Editor Groups are the containers of editors. There can be up to three editor groups. A Tab is the container of an editor. Multiple Tabs can be opened in one editor group.
         "editorGroup.background": "#5489FC",
         "editorGroup.border": "#CF58B5",
-        "editorGroup.dropBackground": "#BD49BF",
+        "editorGroup.dropBackground": "#bd49bf54",
+        "editorGroup.dropIntoPromptBackground": "#cf58b5e1",
+        "editorGroup.dropIntoPromptForeground": "#170025f3",
+        "editorGroup.dropIntoPromptBorder": "#170025ad",
         "editorGroupHeader.noTabsBackground": "#009BBD",
         "editorGroupHeader.tabsBackground": "#30002d", // behind
         "editorGroupHeader.tabsBorder": "#CF58B5",
-        "tab.activeBackground": "#170025", // active
-        "tab.activeForeground": "#CF58B5",
         "tab.border": "#CF58B5",
+            // active
+        "tab.activeBackground": "#170025",
         "tab.activeBorder": "#694DA4",
-        "tab.unfocusedActiveBorder": "#1F69B6",
-        "tab.inactiveBackground": "#1f032a", //inactive
+        "tab.activeForeground": "#c958cf",
+            // inactive
+        "tab.inactiveBackground": "#1f032a", 
         "tab.inactiveForeground": "#694DA4",
-        "tab.unfocusedActiveForeground": "#009BBD",
-        "tab.unfocusedInactiveForeground": "#CF58B5",
-        "tab.hoverBackground": "#BD49BF",
-        "tab.unfocusedHoverBackground": "#009BBD",
-        "tab.hoverBorder": "#1F69B6",
-        "tab.unfocusedHoverBorder": "#5489FC",
+            // unfocused
+        "tab.unfocusedActiveBackground": "#170025",
+        "tab.unfocusedActiveBorder": "#6d54fc67",
+        "tab.unfocusedActiveForeground": "#5874cff4",
+        "tab.unfocusedInactiveBackground": "#1f032a",
+        "tab.unfocusedInactiveForeground": "#674da4eb",
+        "tab.unfocusedHoverBackground": "#6e00bd1c",
+        "tab.unfocusedHoverBorder": "#bc54fc",
+        "tab.unfocusedHoverForeground": "#b300ff84",
+            // hover
+        "toolbar.hoverBackground": "#532150ad",
+        "tab.hoverBackground": "#dd00ff25",
+        "tab.hoverBorder": "#1f68b661",
+        "tab.hoverForeground": "#dd00ff84",
         // Editor Colors — for syntax highlighting, use the editor.tokenColorCustomizations setting. All other editor colors are listed here
         "editor.background": "#170025", //main background
         "editor.foreground": "#DECDE3",
@@ -139,23 +156,23 @@
         "editor.wordHighlightBorder": "#694DA4",
         "editor.worldHighlightStrongBackground": "#DECDE3",
         "editor.wordHighlightStrongBorder": "#694DA4",
-        "editor.findMatchBackground": "#DECDE3",
-        "editor.findMatchHighlightBackground": "#66457082",
-        "editor.findRangeHighlightBackground": "#664570a6",
-        "editor.findMatchBorder": "#694DA4",
-        "editor.findMatchHighlightBorder": "#694DA4",
-        "editor.hoverHighlightBackground": "#decde3a8",
-        "editor.lineHighlightBackground": "#decde33a",
-        "editor.lineHighlightBorder": "#694da4ae",
+        "editor.findMatchBackground": "#693f69e0",
+        "editor.findMatchHighlightBackground": "#70456f5c",
+        "editor.findRangeHighlightBackground": "#9d369db9",
+        "editor.findMatchBorder": "#9d4da4",
+        "editor.findMatchHighlightBorder": "#bd49bf6b",
+        "editor.hoverHighlightBackground": "#decde328",
+        "editor.lineHighlightBackground": "#decde31f", // line bg
+        "editor.lineHighlightBorder": "#794da448",
         "editorLink.activeForeground": "#694DA4",
-        "editor.rangeHighlightBackground": "#decde3a8",
-        "editor.rangeHighlightBorder": "#694da4ba",
+        "editor.rangeHighlightBackground": "#e3cde334",
+        "editor.rangeHighlightBorder": "#bd49bfa4",
         "editorWhitespace.foreground": "#694DA4",
-        "editorIndentGuide.background1": "#DECDE3",
+        "editorIndentGuide.background1": "#decde3eb",
         "editorRuler.foreground": "#694DA4",
         "editorCodeLens.foreground": "#694DA4",
-        "editorBracketMatch.background": "#DECDE3",
-        "editorBracketMatch.border": "#694DA4",
+        "editorBracketMatch.background": "#e0cde322",
+        "editorBracketMatch.border": "#944da491",
         "editorOverviewRuler.border": "#694DA4",
         "editorOverviewRuler.findMatchForeground": "#decde3a8",
         "editorOverviewRuler.rangeHighlightForeground": "#decde3a8",
@@ -187,9 +204,9 @@
         "diffEditor.removedTextBorder": "#1F69B6",
         // Editor Widget Colors - The Editor widget is shown in front of the editor content. Examples are the Find/Replace dialog, the suggestion widget, and the editor hover
         "editorWidget.background": "#000046ea",
-        "editorWidget.border": "#5489FC",
+        "editorWidget.border": "#061026f2",
         "editorSuggestWidget.background": "#000046e6",
-        "editorSuggestWidget.border": "#5489FC",
+        "editorSuggestWidget.border": "#2f54a3",
         "editorSuggestWidget.foreground": "#B469BF",
         "editorSuggestWidget.highlightForeground": "#BD49BF",
         "editorSuggestWidget.selectedBackground": "#7d3197f9",
@@ -202,19 +219,19 @@
         "editorMarkerNavigationWarning.background": "#BD49BF",
         "editorMarkerNavigationInfo.background": "#BD49BF",
         // Peek View Colors — Peek views are used to show references and declarations as a view inside the editor.
-        "peekView.border": "#BD49BF",
-        "peekViewEditor.background": "#009BBD",
-        "peekViewEditorGutter.background": "#009BBD",
-        "peekViewEditor.matchHighlightBackground": "#009BBD",
-        "peekViewResult.background": "#009BBD",
-        "peekViewResult.fileForeground": "#009BBD",
-        "peekViewResult.lineForeground": "#009BBD",
-        "peekViewResult.matchHighlightBackground": "#DECDE3",
-        "peekViewResult.selectionBackground": "#009BBD",
-        "peekViewResult.selectionForeground": "#009BBD",
-        "peekViewTitle.background": "#009BBD",
-        "peekViewTitleDescription.foreground": "#009BBD",
-        "peekViewTitleLabel.foreground": "#009BBD",
+        "peekView.border": "#5f72be",
+        "peekViewEditor.background": "#54b5cb1d",
+        "peekViewEditorGutter.background": "#54b5cb1d",
+        "peekViewEditor.matchHighlightBackground": "#bd49bf71",
+        "peekViewResult.background": "#bd49bf80",
+        "peekViewResult.fileForeground": "#001125df",
+        "peekViewResult.lineForeground": "#009abda2",
+        "peekViewResult.matchHighlightBackground": "#decde348",
+        "peekViewResult.selectionBackground": "#009abda2",
+        "peekViewResult.selectionForeground": "#009abda2",
+        "peekViewTitle.background": "#009abd91",
+        "peekViewTitleDescription.foreground": "#009abda2",
+        "peekViewTitleLabel.foreground": "#0d0025ee",
         // Merge Conflicts — Merge conflict decorations are shown when the editor contains special diff ranges.
         "merge.currentHeaderBackground": "#1f68b6bd",
         "merge.currentContentBackground": "#bd49bfb3",
@@ -254,10 +271,10 @@
         "titleBar.border": "#694DA4",
         // Notification Colors — Notification toasts slide up from the bottom-right of the workbench.
         "notificationCenter.border": "#694DA4",
-        "notificationCenterHeader.foreground": "#a66ce1",
-        "notificationCenterHeader.background": "#8753b4",
+        "notificationCenterHeader.foreground": "#15011df7",
+        "notificationCenterHeader.background": "#7045c8",
         "notificationToast.border": "#009bbd",
-        "notifications.foreground": "#694DA4",
+        "notifications.foreground": "#15011dc6",
         "notifications.background": "#b158c1",
         "notifications.border": "#BD49BF",
         "notificationLink.foreground": "#694DA4",
@@ -265,6 +282,12 @@
         "extensionButton.prominentForeground": "#009BBD",
         "extensionButton.prominentBackground": "#BD49BF",
         "extensionButton.prominentHoverBackground": "#5489FC",
+        /*
+        "extensionButton.background": "#ca72daa4",
+        "extensionButton.foreground": "#170025c6",
+        "extensionButton.hoverBackground": "#c85fdad2",
+        "extensionButton.separator": "#ff9d00",
+        */
         "pickerGroup.border": "#694DA4",
         "pickerGroup.foreground": "#DECDE3",
         // Integrated Terminal Colors
@@ -301,5 +324,39 @@
         "gitDecoration.untrackedResourceForeground": "#4454c6",
         "gitDecoration.ignoredResourceForeground": "#BD49BF",
         "gitDecoration.conflictingResourceForeground": "#CF58B5",
+        // Foreground
+        "activityBarTop.foreground": "#ff0084",
+        "banner.foreground": "#ff00bf",
+        "breadcrumb.focusForeground": "#009abdce",
+        "breadcrumb.foreground": "#e0bbe8e2", // color of text in breadcrumbs (under tabs)
+        "charts.foreground": "#9900ff",
+        "chat.avatarForeground": "#5100ff",
+        "checkbox.foreground": "#00ffb7",
+        "commandCenter.foreground": "#ffee00",
+        "debugIcon.pauseForeground": "#0073ff",
+        "debugIcon.startForeground": "#9900ff",
+        "debugIcon.stopForeground": "#009abdce",
+        "disabledForeground": "#decde392", // the <o and o> at the top right
+        "editorWidget.foreground": "#1f68b6ec", // color of text when hover over something
+        "gitlens.gutterForegroundColor": "#ff00bf",
+        "list.errorForeground": "#dd00ff",
+        "list.warningForeground": "#4f19cd", // when ther is a M
+        "profileBadge.foreground": "#9900ff",
+        "quickInput.foreground": "#009abdce",
+        "search.resultsInfoForeground": "#00ff6e",
+        "settings.headerForeground": "#BD49BF", // color of text in settings
+        "symbolIcon.fieldForeground": "#ff00bf",
+        "symbolIcon.fileForeground": "#0073ff",
+        "symbolIcon.keyForeground": "#ff9d00",
+        "symbolIcon.nullForeground": "#dd00ff",
+        "symbolIcon.textForeground": "#00ffb7",
+        "symbolIcon.unitForeground": "#ff9d00",
+        // Etentions
+        "extensionBadge.remoteBackground": "#00ff6e",
+        "extensionBadge.remoteForeground": "#5100ff",
+        "extensionIcon.preReleaseForeground": "#ffee00a0",
+        "extensionIcon.sponsorForeground": "#00ffb798",
+        "extensionIcon.starForeground": "#cf5894b3",
+        "extensionIcon.verifiedForeground": "#0073ff9a",
     }
 }
